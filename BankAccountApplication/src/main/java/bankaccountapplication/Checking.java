@@ -3,8 +3,9 @@ package bankaccountapplication;
 
 
 public class Checking extends Account {
-    
-    
+    // checking account properties
+    int debitCardNum;
+    int debitCardPIN; 
     
     
     
@@ -14,7 +15,11 @@ public class Checking extends Account {
     accountNumber ="2" + accountNumber;
 }
 
-    
+    private void setDebitCard()
+    {
+        debitCardNum =(int) (Math.random() * Math.pow(10,12)) ;
+        debitCardPIN = (int) (Math.random() * Math.pow(10,4)) ;
+    }
     
     
 }

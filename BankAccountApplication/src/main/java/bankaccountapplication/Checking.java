@@ -2,7 +2,7 @@
 package bankaccountapplication;
 
 
-public class Checking {
+public class Checking extends Account {
     
     
     
@@ -10,8 +10,8 @@ public class Checking {
     
       public Checking(String name,String sSN,double initDeposit)
     {
-    
-    
+    super(name,sSN,initDeposit);
+    accountNumber ="2" + accountNumber;
 }
 
     
